@@ -1,5 +1,7 @@
 # A simple dropwizard app.
 
+**Must Use Java 8**
+
 To run
 
 ```
