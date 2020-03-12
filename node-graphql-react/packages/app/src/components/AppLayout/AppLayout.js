@@ -1,6 +1,7 @@
 import Container from '@material-ui/core/Container';
 import Logo from '../Logo';
 import makeStyles from '@material-ui/core/styles/makeStyles';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const useStyles = makeStyles(theme => ({
@@ -16,7 +17,8 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function AppLayout() {
+function AppLayout(props) {
+  const { children } = props;
   const classes = useStyles();
 
   return (
@@ -24,10 +26,14 @@ function AppLayout() {
       <div className={classes.topbar}>
         <Logo className={classes.logo} />
       </div>
+      {children}
     </Container>
   );
 }
 
 AppLayout.displayName = 'AppLayout';
+AppLayout.propTypes = {
+  children: PropTypes.node,
+};
 
 export default AppLayout;
