@@ -11,7 +11,7 @@ const client = new ApolloClient({ uri: 'https://localhost:4000' });
 const theme = createMuiTheme({
   palette: {
     background: {
-      default: '#FAFAFA',
+      default: '#F4F4F4',
       drawer: '#271b3c',
       paper: '#FFFFFF',
     },
