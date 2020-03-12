@@ -1,0 +1,19 @@
+{
+  "name": "node-graphql-react",
+  "version": "0.1.0",
+  "description": "A Node, GraphQL and React boilerplate for frontend interviews",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "prettier": "^1.19.1"
+  }
+}
