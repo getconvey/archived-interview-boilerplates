@@ -1,0 +1,32 @@
+{
+  "name": "node-graphql-react",
+  "version": "0.1.0",
+  "description": "A Node, GraphQL and React boilerplate for frontend interviews",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "start": "lerna run start",
+    "start:api": "yarn workspace @convey/api start",
+    "start:app": "yarn workspace @convey/app start",
+    "test": "lerna run test",
+    "test:coverage": "lerna run test:coverage"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "jest": "^25.1.0",
+    "lerna": "^3.20.2",
+    "prettier": "^1.19.1"
+  }
+}
