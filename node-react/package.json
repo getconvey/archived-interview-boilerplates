@@ -1,7 +1,7 @@
 {
   "name": "root",
-  "version": "0.0.0",
-  "description": "A Node, GraphQL and React boilerplate for frontend interviews",
+  "version": "1.0.0",
+  "description": "A NodeJS and React boilerplate for frontend interviews",
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap"
