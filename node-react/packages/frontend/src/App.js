@@ -1,26 +1,29 @@
-import './App.css';
-import logo from './logo.svg';
-import React from 'react';
+import React, { useState } from 'react';
+import styled from 'styled-components';
+
+import ShipmentSummary from './pages/ShipmentSummary';
+import OrderSummaryOverlay from './components/OrderSummaryOverlay';
+
+import ShipmentData from './mock_data/shipments.json';
+import OrderData from './mock_data/orders.json';
 
 function App() {
+  const [showOrderSummary, setShowOrderSummary] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer id="app-container">
+      <ShipmentSummary
+        OrderData={OrderData}
+        ShipmentData={ShipmentData}
+        onFullOrderClick={() => setShowOrderSummary(true)}
+      />
+      {showOrderSummary && <OrderSummaryOverlay />}
+    </AppContainer>
   );
 }
+
+const AppContainer = styled.div`
+  width: 100%;
+  min-height: 100vh;
+`;
 
 export default App;
