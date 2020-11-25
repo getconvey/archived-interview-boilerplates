@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { DisplayToggle } from './DisplayToggle';
+import DisplayToggle from './DisplayToggle';
 
 import { grey } from '../styles/Colors';
 import { QUERY_FOR_MOBILE, MQ_FOR_MOBILE } from '../styles/MediaQueries';
@@ -61,6 +61,8 @@ const Container = styled.div`
   border-bottom: 1px solid ${grey};
 
   padding: 24px;
+
+  z-index: 10;
 
   ${MQ_FOR_MOBILE} {
     padding: 16px 24px;

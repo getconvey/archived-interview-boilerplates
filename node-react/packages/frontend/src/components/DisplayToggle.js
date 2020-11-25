@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 // display first child if the query evaluates to true, display the second if false
 // intenionally rendering both so they don't have to remount when the query evaluation changes
-export const DisplayToggle = ({ query = '', children = [] }) => {
+const DisplayToggle = ({ query = '', children = [] }) => {
   return <Toggle query={query}>{children}</Toggle>;
 };
 
@@ -22,3 +22,5 @@ const Toggle = styled.section`
     }
   }
 `;
+
+export default DisplayToggle;
