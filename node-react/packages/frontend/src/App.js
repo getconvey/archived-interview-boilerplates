@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 import ShipmentSummary from './pages/ShipmentSummary';
 import OrderSummaryOverlay from './components/OrderSummaryOverlay';

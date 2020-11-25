@@ -6,4 +6,3 @@ export const alphaGrey = '#CCCCCCAA';
 
 export const brightBlue = '#2170EF';
 export const deepBlue = '#2456A9';
-

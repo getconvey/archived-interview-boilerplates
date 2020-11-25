@@ -1,7 +1,6 @@
 // font weights
 const regular = 400;
 const mediumBold = 500;
-const bold = 600;
 
 export const H1Style = `
     font-weight: ${mediumBold};

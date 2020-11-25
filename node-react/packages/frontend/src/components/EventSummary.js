@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 import { lightGrey, grey, textGrey } from '../styles/Colors';
 import { H3Style, H4Style, H5Style, H6Style } from '../styles/Headings';
