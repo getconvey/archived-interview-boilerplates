@@ -1,0 +1,10 @@
+# Virtual Environment
+venv/
+
+*.pyc
+__pycache__/
+
+dist/
+build/
+
+.mypy_cache/
