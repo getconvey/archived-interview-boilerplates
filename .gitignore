@@ -1,32 +1,13 @@
-# Maven build
-target/
-
 # IntelliJ
 *.iml
 .idea/
+
+# VS Code
+*.code-workspace
+.vscode
 
 # Misc
 .DS_Store
 
 # Log file
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-# Node Modules
-**/node_modules
-
-# yarn
-**/yarn-debug.log*
-**/yarn-error.log*
-
-# VS Code
-*.code-workspace
-.vscode
