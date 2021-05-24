@@ -1,4 +1,5 @@
-from flask import Flask, jsonify
+from flask import Flask
+from .hello_world import hello_world
 from typing import Any, Mapping
 
 
@@ -13,8 +14,6 @@ def create_app(test_config: Mapping[str, Any] = None):
     else:
         app.config.from_mapping(test_config)
 
-    @app.route("/helloworld")
-    def hello_world():
-        return jsonify({"text": app.config['HELLO_WORLD']})
+    app.register_blueprint(hello_world)
 
     return app
