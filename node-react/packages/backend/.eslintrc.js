@@ -1,11 +1,11 @@
 module.exports = {
   root: true,
-  parser: "babel-eslint",
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2018,
   },
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
-  plugins: ["prettier"],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  plugins: ['prettier'],
   env: {
     browser: false,
     es6: true,
@@ -13,6 +13,6 @@ module.exports = {
   },
   reportUnusedDisableDirectives: true,
   rules: {
-    "prettier/prettier": "error",
+    'prettier/prettier': 'error',
   },
 };
