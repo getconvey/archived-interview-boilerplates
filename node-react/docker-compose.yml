@@ -1,21 +1,21 @@
-version: '2'
+version: "2"
 services:
   backend:
-    build: 
+    build:
       context: ./packages/backend
     volumes:
       - ./packages/backend/:/usr/src/app
-      - /usr/src/app/node_modules
+      - ./node_modules:/usr/src/app/node_modules
     ports:
-      - '4000:4000'
+      - "4000:4000"
 
   frontend:
-    build: 
+    build:
       context: ./packages/frontend
     volumes:
       - ./packages/frontend/:/usr/src/app
-      - /usr/src/app/node_modules
+      - ./node_modules:/usr/src/app/node_modules
     ports:
-      - '3000:3000'
+      - "3000:3000"
     depends_on:
       - backend

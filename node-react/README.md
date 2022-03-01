@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-There is 2 ways to run the project, via docker or yarn. First, install dependencies within the root directory:
+There are two ways to run the project, via docker or yarn. First, install dependencies within the root directory:
 
 ```bash
 $ yarn
