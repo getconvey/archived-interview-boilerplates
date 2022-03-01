@@ -2,11 +2,29 @@
 
 ## Getting Started
 
+There is 2 ways to run the project, via docker or yarn. First, install dependencies within the root directory:
+
+```bash
+$ yarn
+```
+
+### Docker
+
 Before proceeding make sure to have [Docker](https://docs.docker.com/install/) installed on your machine. We are using `docker-compose` to make it easier to start the necessary services, once you are ready run the following command to get started:
 
 ```bash
 $ docker-compose up --build
 ```
+
+### Yarn
+
+Inside a new terminal window under `packages/frontend` directory run:
+
+```bash
+$ yarn start
+```
+
+Open another terminal window or tab and repeat under `packages/backend` directory.
 
 ## Project Overview
 
