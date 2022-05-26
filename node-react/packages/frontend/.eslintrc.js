@@ -5,7 +5,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 2021,
     sourceType: 'module',
   },
   extends: [

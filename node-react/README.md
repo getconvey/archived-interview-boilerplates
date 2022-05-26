@@ -34,7 +34,7 @@ This is a [React](https://reactjs.org/) single page app built using [Create Reac
 
 We have provided some bootstrap code for you to get you up and running, however feel free roll your own if you are more comfortable with that.
 
-...project details here
+...Please add your project details here...
 
 ## Project Structure
 
