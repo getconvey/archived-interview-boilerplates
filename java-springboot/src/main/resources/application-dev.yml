@@ -1,0 +1,6 @@
+p44:
+  application:
+    name: ${spring.application.name}
+    
+hello-world:
+  message: Bonjour le monde
