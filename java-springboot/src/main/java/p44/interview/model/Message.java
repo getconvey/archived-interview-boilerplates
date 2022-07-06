@@ -2,17 +2,15 @@ package p44.interview.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Value;
 
+@Value
 public class Message {
 
-    private final String text;
+    String text;
 
     @JsonCreator
     public Message(@JsonProperty("text") String text) {
         this.text = text;
-    }
-
-    public String getText() {
-        return text;
     }
 }

@@ -1,6 +1,8 @@
-p44:
-  application:
-    name: ${spring.application.name}
-    
 hello-world:
-  message: Bonjour le monde
+  message: Bonjour le monde from ${spring.application.name}
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["httptrace", "health"]

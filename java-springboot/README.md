@@ -2,7 +2,8 @@
 
 **Requires Java 14 or greater**
 
-pom.xml is configured to use java 14.
+The pom.xml is configured to use Java 11. We've tested with 11, 14, 17 and 18 so you can choose a version that's
+convenient.
 
 To run
 
@@ -27,5 +28,5 @@ will return (excepting the dates)
 
 The healthcheck just returns that all is ok.
 
-    % curl -i localhost:8081/healthcheck
+    % curl -i localhost:8080/actuator/health
     {"status":"UP"}

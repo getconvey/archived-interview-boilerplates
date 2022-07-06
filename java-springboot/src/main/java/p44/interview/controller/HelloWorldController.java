@@ -22,6 +22,6 @@ public class HelloWorldController {
 
     @GetMapping()
     public ResponseEntity<Message> hello() {
-        return new ResponseEntity<Message>(new Message(messageText), HttpStatus.OK);
+        return new ResponseEntity<>(new Message(messageText), HttpStatus.OK);
     }
 }
