@@ -1,6 +1,6 @@
 # A simple springboot app.
 
-**Requires Java 14 or greater**
+**Requires Java 11 or greater**
 
 The pom.xml is configured to use Java 11. We've tested with 11, 14, 17 and 18 so you can choose a version that's
 convenient.
