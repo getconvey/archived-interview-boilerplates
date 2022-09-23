@@ -1,0 +1,8 @@
+hello-world:
+  message: Bonjour le monde from ${spring.application.name}
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["httptrace", "health"]
